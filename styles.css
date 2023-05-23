@@ -1,0 +1,124 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.chat-box {
+  width: 300px;
+  height: 400px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555555;
+  background: none;
+  border: none;
+}
+
+.close-button:hover {
+  color: #333333;
+}
+
+.chat-area {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.message-box {
+  flex-grow: 1;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+.message-box input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  color: #000000;
+}
+
+.message-box input[type="text"]::placeholder {
+  color: #888888;
+}
+
+.send-button {
+  width: 25px;
+  height: 25px;
+  background-image: url("https://cdn2.iconfinder.com/data/icons/dark-action-bar-2/96/send-512.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.message-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.message.sent .message-content {
+  margin-left: 5px;
+}
+
+.you {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.time {
+  font-size: 12px;
+  color: #999;
+}
+
+.chat-area::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.chat-area::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.chat-area::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.chat-area::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
